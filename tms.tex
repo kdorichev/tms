@@ -1,0 +1,290 @@
+\documentclass[t,aspectratio=169]{beamer}  % [t], [c], или [b] --- вертикальное выравнивание на слайдах (верх, центр, низ)
+%\documentclass[handout]{beamer} % Раздаточный материал (на слайдах всё сразу)
+%\documentclass[t,aspectratio=169]{beamer} % Соотношение сторон
+
+\usetheme{Madrid}
+\usecolortheme{seahorse}
+
+%%% Работа с русским языком
+\usepackage{cmap}					% поиск в PDF
+%\usepackage{mathtext} 				% русские буквы в формулах
+\usepackage[T2A]{fontenc}			% кодировка
+\usepackage[utf8]{inputenc}			% кодировка исходного текста
+\usepackage[english,russian]{babel}	% локализация и переносы
+
+%%% Работа с картинками
+\usepackage{graphicx}  % Для вставки рисунков
+\graphicspath{{images}}  % папки с картинками
+\setlength\fboxsep{3pt} % Отступ рамки \fbox{} от рисунка
+\setlength\fboxrule{1pt} % Толщина линий рамки \fbox{}
+%\usepackage{wrapfig} % Обтекание рисунков текстом
+\setbeamertemplate{caption}{\raggedright\insertcaption\par}
+%[numbered] % set captions with numbers
+%%% Другие пакеты
+\usepackage{lastpage} % Узнать, сколько всего страниц в документе.
+\usepackage{soul} % Модификаторы начертания
+\usepackage{csquotes} % Еще инструменты для ссылок
+%\usepackage[style=authoryear,maxcitenames=2,backend=biber,sorting=nty]{biblatex}
+\usepackage{multicol} % Несколько колонок
+\usepackage{hyperref}
+\hypersetup{				% Гиперссылки
+	unicode=true,           % русские буквы в раздела PDF
+	pdftitle={Запоминать Писание Наизусть},   % Заголовок
+	pdfauthor={Библейская церковь Санкт-Петербурга},      % Автор
+	pdfsubject={Тема},      % Тема
+	pdfcreator={Создатель}, % Создатель
+	pdfproducer={Производитель}, % Производитель
+	pdfkeywords={keyword1} {key2} {key3}, % Ключевые слова
+	colorlinks=false,       	% false: ссылки в рамках; true: цветные ссылки
+	linkcolor=red,          % внутренние ссылки
+	citecolor=black,        % на библиографию
+	filecolor=magenta,      % на файлы
+	urlcolor=cyan           % на URL
+}
+%-------------------------------------------------------
+\title{\textsc{\textbf{Запоминать Писание Наизусть}}}
+\subtitle{Зачем и Как}
+\author[Библейская Церковь СПб]{}
+
+\titlegraphic{\vspace{-1.5cm}\includegraphics[width=7cm]{bible-church-spb-logo}}
+\date{}
+
+% Change example block width
+\addtobeamertemplate{block example begin}{%
+    \setlength{\textwidth}{0.45\textwidth}
+}{}
+
+\begin{document}
+
+\frame[plain]{\titlepage}	% Титульный слайд
+%-------------------------------------------------------
+\begin{frame}{Содержание}
+	\begin{multicols}{2}
+    \tableofcontents
+	\end{multicols}
+\end{frame}
+%-------------------------------------------------------
+\section{Божье Слово}
+\subsection{Пять способов употребления}
+%------------------------------------------------------- 
+\begin{frame}
+	\frametitle{\insertsection} 
+	\framesubtitle{\insertsubsection}
+	Существует пять способов духовного питания Божьим Словом:
+	\begin{multicols}{2}
+	\begin{enumerate}
+		\item Слушать \pause
+		\item Читать \pause
+		\item Изучать \pause
+		\item Запоминать \pause
+		\item Размышлять и Применять
+	\end{enumerate}
+	\begin{figure}
+		\includegraphics[height=0.6\textheight]{hand-word-ru-800}
+		\caption{Иллюстрация <<Рука--Слово>>}
+	\end{figure}	
+	\end{multicols}
+\end{frame}
+%-------------------------------------------------------
+\section{Запоминать Писание}
+\subsection{Заповеди}
+\begin{frame}
+	\frametitle{\insertsection}
+	\framesubtitle{\insertsubsection}
+	\begin{block}{Второзаконие 6:6}
+	И да будут слова сии, которые Я заповедую тебе сегодня, в сердце твоем. 
+	\end{block}
+
+	\begin{block}{Псалом 118:9,11}
+	Как юноше содержать в~чистоте путь свой? --- Хранением себя по слову Твоему\ldots{} 
+	В~сердце моем сокрыл я~слово Твое, чтобы не грешить пред Тобою. 
+\end{block}	
+	\begin{block}{Иисуса Навина 1:8}
+		Да не отходит сия книга закона от уст твоих; но поучайся в~ней день и~ночь, дабы в~точности исполнять все, что в~ней написано: тогда ты будешь успешен в~путях твоих и~будешь поступать благоразумно. 
+	\end{block}
+\end{frame}  
+%-------------------------------------------------------
+\subsection{Пример Иисуса}
+\begin{frame}
+	\frametitle{\insertsection}
+	\framesubtitle{\insertsubsection}
+Иисус противостоял сатане, цитируя Писание:
+
+\begin{block}{Луки 4:4 --- Второзаконие 8:3}
+Иисус сказал ему в ответ: \underline{написано}, что не хлебом одним будет жить человек, но всяким словом Божиим. 
+\end{block}
+
+\begin{block}{Луки 4:8 --- Второзаконие 6:13}
+	отойди от Меня, сатана; \underline{написано}: Господу Богу твоему поклоняйся, и~Ему одному служи. 
+\end{block}
+
+\begin{block}{Луки 4:12 --- Второзаконие 6:16}
+Иисус сказал ему в ответ: \underline{сказано}: не искушай Господа Бога твоего. 
+\end{block}
+
+\end{frame}    
+%-------------------------------------------------------
+\section{Принципы запоминания}
+\begin{frame}
+	\frametitle{\insertsection}
+	\framesubtitle{\insertsubsection}
+	
+	\begin{itemize}[<+->]
+		\item Дословно
+        \item Записывайте и проговаривайте вслух
+        \item Отмечайте
+        \item Повторение
+        \item Тематическая система
+
+        \item Ссылки
+    \end{itemize}
+
+	\begin{block}{}
+		\only<1>{
+			\begin{enumerate}
+				\item Дословно запомненный стих легче цитировать. 
+				\item Вы цитируете Божье Слово, а не вашу его интерпретацию.
+			\end{enumerate}}		
+        \only<2>{Подключайте механическую, зрительную и слуховую память.}
+
+        \only<3>{Отмечайте в~тексте повторения, противопоставления, ритм, списки и проч.}
+
+        \only<4>{В~этом секрет прочного запоминания.
+		С~каждым разом на повторение потребуется меньше времени и усилий. Повторение~--- ключ к тому, чтобы не~растерять запомненное.}
+
+		\only<5>{Запоминать стих вместе с~темой. Вам будут доступны многие стихи, связанные с~этой темой.	
+		
+		\vspace{6pt}
+
+		Например, \textbf{<<Супружество>>}
+		\newline Бытие~2:24; Ефесянам~5:25,28; Евреям~13:8; 1~Петра 3:7; Иеремия~32:39.}
+
+		\only<6>{В начале стиха и в~конце запоминайте ссылку (адрес) стиха/отрывка. Чтобы при необходимости его найти.}
+    \end{block}
+\end{frame}
+%-------------------------------------------------------
+\section{Тематическая Система Запоминания}
+\begin{frame}[c]
+	\frametitle{\insertsection}
+	\framesubtitle{\insertsubsection}
+	\begin{figure}
+		\begin{flushright}
+		\vspace{-2.2cm}
+		\includegraphics[height=1cm]{navs-logo}
+		% \vspace{-0.5cm}\caption{www.remem.me}
+	\end{flushright}
+		\end{figure}
+		\vspace{0.4cm}
+	Это тщательно отобранные и~сгруппированные по темам 60~ключевых библейских стихов.
+	Некоторые темы:
+	\begin{itemize}
+		\item Слово Божье
+		\item Молитва 
+		\item Господство Христа
+		\item Христос в центре
+		\item Свидетельство
+		\item Общение
+		\item Растите в честности
+		\item Растите в вере
+	\end{itemize}		
+\end{frame}
+%-------------------------------------------------------
+\section{Инструменты}
+\subsection{Карточки}
+\begin{frame}[c]
+	\frametitle{\insertsection}
+	\framesubtitle{\insertsubsection}
+	Пример карточек на плотной бумаге
+	 \begin{multicols*}{2}
+		\begin{figure}
+			\includegraphics[height=0.4\textheight]{card-2Pe_1.2}
+			% \caption{}
+		\end{figure}
+		\begin{figure}
+			\includegraphics[height=0.4\textheight]{card-Re}
+			% \caption{}
+		\end{figure}	
+	 \end{multicols*}
+\end{frame}
+%-------------------------------------------------------
+% \section{Пример карточки для запоминания стиха}
+% \begin{frame}[c]
+% 	\frametitle{\insertsection}
+% 	\framesubtitle{\insertsubsection}
+%   \begin{block}{Уверенность в спасении}
+% 	1 Иоанна 5:11-12
+	 
+% 	 \vspace{6pt}
+
+% 	 Свидетельство сие состоит в~том, \newline
+% 	 что Бог даровал нам жизнь вечную, \newline
+% 	 и~сия жизнь — в~Сыне Его. \newline
+% 	 Имеющий Сына [Божия] имеет жизнь; \newline
+% 	 не имеющий Сына Божия не имеет жизни.
+% 	 \begin{flushright}
+% 		1 Иоанна 5:11-12
+% 	\end{flushright}
+% \end{block}
+% \end{frame}
+%-------------------------------------------------------
+\subsection{Приложение <<Помни Меня>>, www.remem.me}
+\begin{frame}[c]
+	\frametitle{\insertsection}
+	\framesubtitle{\insertsubsection}
+	\begin{figure}
+		\begin{flushright}
+		\vspace{-1.5cm}
+		\includegraphics[width=1cm]{remember-me-logo}
+		% \vspace{-0.5cm}\caption{www.remem.me}
+	\end{flushright}
+		\end{figure}
+		\vspace{0.4cm}
+	Режимы разучивания:
+	 \begin{multicols}{2}
+		\begin{center}
+			\begin{figure}
+			\includegraphics[height=0.55\textheight]{remember-me-card-hide}
+			\caption{Скрытие слов}
+			\end{figure}
+			\begin{figure}
+			\includegraphics[height=0.55\textheight]{remember-me-card-pick}
+			\caption{Выбор слова}
+			\end{figure}		
+		\end{center}
+	 \end{multicols}
+\end{frame}
+%-------------------------------------------------------
+\section{Применение}
+\subsection{Пять отрывков об уверенности}
+\begin{frame}[c]
+	\frametitle{\insertsection}
+	\framesubtitle{\insertsubsection}
+	Для начала
+	\begin{multicols}{2}
+	\begin{exampleblock}{Уверенность в спасении}\setlength{\textwidth}{0.4\textwidth}
+		1 Иоанна 5:11-12
+	\end{exampleblock}
+	\begin{exampleblock}{Уверенность в прощении}
+		1 Иоанна 1:9
+	\end{exampleblock}
+	\begin{exampleblock}{Уверенность в Божьем водительстве}
+		Притчи 3:5-6
+	\end{exampleblock}	
+	\begin{exampleblock}{Уверенность в ответе на молитву}
+		Иоанна 16:24
+	\end{exampleblock}	
+	\begin{exampleblock}{Уверенность в победе над грехом}
+		1 Коринфянам 10:13
+	\end{exampleblock}
+
+	\end{multicols}		
+\end{frame}
+%-------------------------------------------------------
+\section{Применение}
+\subsection{Пять отрывков об уверенности}
+\begin{frame}[c]
+	\frametitle{\insertsection}
+	\framesubtitle{\insertsubsection}
+\end{frame}
+
+\end{document}
